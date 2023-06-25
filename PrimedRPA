@@ -29,7 +29,7 @@ import re
 
 def FastaToDict(InputFile):
 	fastadict = {}
-	with open(InputFile) as file_one:
+	with open(InputFile, 'r', encoding='utf-8') as file_one:
 		for line in file_one:
 			line = line.strip()
 			if not line:
